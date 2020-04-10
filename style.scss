@@ -48,3 +48,15 @@ p {
     font-size: 18px;
     font-weight: 400;
 }
+
+#clock {
+    display: flex;
+
+    div {
+        margin-right: 10px;
+        padding: 50px;
+        background-color: $shadow;
+        display: flex;
+        flex-direction: column;
+    }
+}

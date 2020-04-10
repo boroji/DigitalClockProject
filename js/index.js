@@ -16,8 +16,11 @@ function digitalClock() {
     }
 
     let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    let clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
-    document.getElementById('clock').innerHTML = clock;
+    let allDays = weekdays[day];
+    document.getElementById('days').innerHTML = allDays;
+    document.getElementById('hours').innerHTML = hours;
+    document.getElementById('minutes').innerHTML = minutes;
+    document.getElementById('seconds').innerHTML = seconds;
 }
 digitalClock();
 setInterval(digitalClock, 1000);
