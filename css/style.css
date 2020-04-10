@@ -76,8 +76,8 @@ p {
           align-items: center;
   -webkit-box-shadow: 0px 0px 20px 2px #000000;
           box-shadow: 0px 0px 20px 2px #000000;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -87,8 +87,8 @@ p {
 }
 
 #clock div:hover {
-  -webkit-transform: translateX(1.3px);
-          transform: translateX(1.3px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   background-color: #f9ce62;
 }
 
@@ -102,5 +102,22 @@ p {
 
 #clock div:last-child {
   border-top-right-radius: 40px;
+}
+
+@media (max-width: 575.98px) {
+  #clock {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #clock div:first-child {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 0px;
+  }
+  #clock div:last-child {
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
