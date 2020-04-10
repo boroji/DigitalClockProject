@@ -1,9 +1,9 @@
 function digitalClock() {
-    const date = new Date();
-    const hours = date.getHours() + '';
-    const minutes = date.getMinutes() + '';
-    const seconds = date.getSeconds() + '';
-    const day = date.getDay();
+    let date = new Date();
+    let hours = date.getHours() + '';
+    let minutes = date.getMinutes() + '';
+    let seconds = date.getSeconds() + '';
+    let day = date.getDay();
 
     if (hours.length < 2) {
         hours = '0' + hours;
@@ -15,8 +15,8 @@ function digitalClock() {
         seconds = '0' + seconds;
     }
 
-    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
+    let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let clock = weekdays[day] + ' ' + hours + ':' + minutes + ':' + seconds;
     document.getElementById('clock').innerHTML = clock;
 }
 digitalClock();

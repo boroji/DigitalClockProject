@@ -1,0 +1,50 @@
+$primary: #89dcfb;
+$shadow: #263238;
+$dark: #192227;
+$accent: #f9ce62;
+$negative: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: $dark;
+    color: $negative;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+    color: $negative;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
