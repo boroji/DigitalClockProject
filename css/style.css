@@ -76,10 +76,24 @@ p {
           align-items: center;
   -webkit-box-shadow: 0px 0px 20px 2px #000000;
           box-shadow: 0px 0px 20px 2px #000000;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #clock div p {
   color: rgba(255, 255, 255, 0.2);
+}
+
+#clock div:hover {
+  -webkit-transform: translateX(1.3px);
+          transform: translateX(1.3px);
+  background-color: #f9ce62;
+}
+
+#clock div:hover h1, #clock div:hover p {
+  color: #192227;
 }
 
 #clock div:first-child {
