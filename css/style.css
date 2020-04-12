@@ -89,7 +89,7 @@ p {
 #clock div:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background-color: #f9ce62;
+  background: linear-gradient(45deg, #C3E88D 0%, #f9ce62 100%);
 }
 
 #clock div:hover h1, #clock div:hover p {
